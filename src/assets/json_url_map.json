@@ -1,0 +1,14 @@
+{
+  "BASE_URL": "https://opensource-demo.orangehrmlive.com/web/index.php",
+  "ENDPOINTS": {
+    "AUTH": {
+      "LOGIN": "auth/login",
+      "LOGOUT": "auth/logout"
+    },
+    "ADMIN": {
+      "USER_MANAGEMENT": "admin/viewSystemUsers",
+      "JOB_TITLES": "admin/viewJobTitleList",
+      "PAY_GRADES": "admin/viewPayGrades"
+    }
+  }
+}
