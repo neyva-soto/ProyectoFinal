@@ -16,3 +16,17 @@ def step_impl(context):
     directory_page = context.current_page
     records_found_txt = directory_page.records_found_text(DirectoryPageLocators.RECORDS_FOUND)
     assert_that(records_found_txt).contains("Found")
+
+
+@when(u'User clicks on Drop Down List job Title')
+def step_impl(context):
+    directory_page = context.current_page
+    directory_page.click_on_drop_down_job_title(DirectoryPageLocators.DROPDOWN_MENU)
+
+
+@when(u'User selects “{selected_item}” from list')
+def step_impl(context, selected_item):
+    directory_page = context.current_page
+    directory_page.select_from_dropdown(selected_item)
+
+

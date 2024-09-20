@@ -13,3 +13,11 @@ Feature: Directory section
     Given The user is on the Directory Page
     Then Records Found should be shown
 
+  @smoke
+  Scenario: AUT-218 Validar el filtro del empleados por Job Title (puesto de trabajo)
+    Given The user is on the Directory Page
+    When User clicks on Drop Down List job Title
+    And User selects “HR Manager” from list
+    And User clicks on button Search
+    Then Records Found should be shown
+
