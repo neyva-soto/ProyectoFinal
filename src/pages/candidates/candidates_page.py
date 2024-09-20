@@ -19,7 +19,3 @@ class CandidatesPage(BasePage):
         input_fields = self.find_element(CandidatesPageLocators.INPUT_FIELDS_WITHOUT_NAME)
         self.loop.run_until_complete(input_fields.nth(1).fill(candidate_name))
 
-    def click_on_custom_dropdown(self, candidate_name):
-        dropdown_element = self.find_element(CandidatesPageLocators.AUTOCOMPLETE_DROPDOWN_BY_TEXT.format(candidate_name))
-        element = dropdown_element.locator(CommonLocators.ELEMENT_BY_TEXT.format(candidate_name))
-        self.loop.run_until_complete(element.first.click())

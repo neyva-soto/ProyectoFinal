@@ -22,6 +22,7 @@ class BasePage(object):
         self.loop.run_until_complete(element.click())
 
     def get_text_from_element(self, locator):
+        self.loop.run_until_complete(self.context.page.wait_for_selector(locator))
         element = self.find_element(locator)
         if element:
             return self.loop.run_until_complete(element.inner_text())
@@ -52,4 +53,9 @@ class BasePage(object):
     def get_card_text_by_content(self, row_text):
         table_card = self.find_element(CommonLocators.TABLE_CARD_BY_TEXT.format(row_text))
         if table_card:
-            return self.loop.run_until_complete(table_card.inner_text())
+            return self.loop.run_until_complete(table_card.first.inner_text())
+
+    def click_on_custom_dropdown(self, option):
+        dropdown_element = self.find_element(CommonLocators.AUTOCOMPLETE_DROPDOWN_BY_TEXT.format(option))
+        element = dropdown_element.locator(CommonLocators.ELEMENT_BY_TEXT.format(option))
+        self.loop.run_until_complete(element.first.click())
