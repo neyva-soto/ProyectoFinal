@@ -3,6 +3,7 @@ import logging
 from xml.etree.cElementTree import Element, SubElement, ElementTree
 
 from src.pages.candidates.candidates_page import CandidatesPage
+from src.pages.vacancies.vacancies_page import VacanciesPage
 from src.utils.config_loader import playwright_config
 from src.utils.logger_config import setup_logger
 
@@ -35,6 +36,8 @@ def before_scenario(context: Context, scenario):
         context.current_page = JobsPage(context)
     elif 'candidates' in scenario.feature.tags:
         context.current_page = CandidatesPage(context)
+    elif 'vacancies' in scenario.feature.tags:
+        context.current_page = VacanciesPage(context)
     else:
         raise ValueError(f"No page initialization defined for tags: {scenario.feature.tags}")
 
