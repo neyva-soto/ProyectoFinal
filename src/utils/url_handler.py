@@ -36,8 +36,12 @@ url_parameters = {
     "user_management": ("ADMIN", "USER_MANAGEMENT"),
     "job_titles": ("ADMIN", "JOB_TITLES"),
     "pay_grades": ("ADMIN", "PAY_GRADES"),
+
+    "directory": ("DIRECTORY", "DIRECTORY"),
+
     "candidates": ("RECRUITMENT", "CANDIDATES"),
     "vacancies": ("RECRUITMENT", "VACANCIES")
+
 }
 
 # Samples

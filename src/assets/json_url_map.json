@@ -10,9 +10,15 @@
       "JOB_TITLES": "admin/viewJobTitleList",
       "PAY_GRADES": "admin/viewPayGrades"
     },
+
+    "DIRECTORY": {
+      "DIRECTORY": "directory/viewDirectory"
+    },
+
     "RECRUITMENT": {
       "CANDIDATES": "recruitment/viewCandidates",
       "VACANCIES": "recruitment/viewJobVacancy"
+
     }
   }
 }
