@@ -35,7 +35,9 @@ url_parameters = {
     "login": ("AUTH", "LOGIN"),
     "user_management": ("ADMIN", "USER_MANAGEMENT"),
     "job_titles": ("ADMIN", "JOB_TITLES"),
-    "pay_grades": ("ADMIN", "PAY_GRADES")
+    "pay_grades": ("ADMIN", "PAY_GRADES"),
+    "candidates": ("RECRUITMENT", "CANDIDATES"),
+    "vacancies": ("RECRUITMENT", "VACANCIES")
 }
 
 # Samples

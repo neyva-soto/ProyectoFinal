@@ -9,6 +9,10 @@
       "USER_MANAGEMENT": "admin/viewSystemUsers",
       "JOB_TITLES": "admin/viewJobTitleList",
       "PAY_GRADES": "admin/viewPayGrades"
+    },
+    "RECRUITMENT": {
+      "CANDIDATES": "recruitment/viewCandidates",
+      "VACANCIES": "recruitment/viewJobVacancy"
     }
   }
 }
